@@ -2,16 +2,7 @@
 import Link from "next/link";
 import { ModeToggle } from "./ModeToggle";
 
-import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerDescription,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from "@/components/ui/drawer";
+import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
 
 export const NavBar = () => {
   return (
@@ -29,9 +20,9 @@ export const NavBar = () => {
             <Link className=" text-center" href="/token-swap">
               Web3
             </Link>
-            <Link className=" text-center" href="/contact">
+            {/* <Link className=" text-center" href="/contact">
               Contact
-            </Link>
+            </Link> */}
             <div className="flex justify-center mb-10">
               <ModeToggle />
             </div>
@@ -58,12 +49,12 @@ export const NavBar = () => {
         >
           // Web3
         </Link>
-        <Link
+        {/* <Link
           className=" hover:scale-110 hover:bg-gradient-to-r hover:text-indigo-500 animate"
           href="/contact"
         >
           // Contact
-        </Link>
+        </Link> */}
         <ModeToggle />
       </nav>
     </div>
