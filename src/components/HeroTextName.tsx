@@ -1,5 +1,10 @@
 import { cn } from "@/lib/utils";
-import { pattaya, racingSansOne } from "@/app/./layout";
+import { Pattaya, Racing_Sans_One } from "next/font/google";
+const pattaya = Pattaya({ weight: "400", subsets: ["latin"] });
+const racingSansOne = Racing_Sans_One({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 export const HeroTextName = () => {
   return (
