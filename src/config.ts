@@ -4,6 +4,7 @@ import wisesheetsImage from "@/assets/images/wisesheets-home-page.png";
 import ladbrokesMockup from "@/assets/images/ladbrokes-mockup-mobile.png";
 import nedsMockup from "@/assets/images/neds-mobile-mockup.png";
 import nextJsPortfolioImage from "@/assets/images/next-portfolio.png";
+import cryptoLotteryImage from "@/assets/images/Create-Wagmi.png";
 import { StaticImageData } from "next/image";
 
 interface SocialLinks {
@@ -53,6 +54,14 @@ export const config: Config = {
 
   portfolio: {
     projects: [
+      {
+        title: "Crypto Lottery",
+        siteUrl: "https://crypto-lottery-ffap.netlify.app/",
+        description: "Built with Next.js wagmi and solidity",
+        longDescription: "A crypto lottery i built on base chain",
+        image: cryptoLotteryImage,
+        alt: "Crypto Lottery",
+      },
       {
         title: "This NextJS Portfolio",
         siteUrl: "https://alex-portfolio-vue.netlify.app/",

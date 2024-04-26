@@ -69,8 +69,7 @@ export default function TokenSwap() {
               showOnRampLink: true,
               defaultTokens: [],
               collectFees: {
-                integratorAddress:
-                  process.env.PUBLIC_NEXT_WALLET_PUBLIC_ADDRESS!, // The EVM address of the integrator that will receive the fee
+                integratorAddress: "0x4bBe485455c8A2d2Cb2748Eda58bD72Ea3831039",
                 fee: 50, // The amount in "basis points" for the fee. 50 = 0.05%. there is currently soft limit of 1% fee allowed for each tx.
               },
             }}
