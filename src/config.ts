@@ -5,6 +5,7 @@ import ladbrokesMockup from "@/assets/images/ladbrokes-mockup-mobile.png";
 import nedsMockup from "@/assets/images/neds-mobile-mockup.png";
 import nextJsPortfolioImage from "@/assets/images/next-portfolio.png";
 import cryptoLotteryImage from "@/assets/images/Create-Wagmi.png";
+import favCryptoTrackerImage from "@/assets/images/fav-crypto-tracker-ss.png"
 import { StaticImageData } from "next/image";
 
 interface SocialLinks {
@@ -54,6 +55,15 @@ export const config: Config = {
 
   portfolio: {
     projects: [
+      {
+        title: "Favourite Crypto Tracker",
+        siteUrl: 'https://fav-crypto-tracker.vercel.app/',
+        description: 'A crypto tracker built with next js and supabase',
+        longDescription: "Using coingeckos api I created a market tracker for your favourite crypto currencies. This includes charts and a dashboard to view your favourite crypto currencies",
+        image: favCryptoTrackerImage,
+        github: "https://github.com/alex1092/fav-crypto-tracker",
+        alt: "Favourite Crypto Tracker",
+      },
       {
         title: "Crypto Lottery",
         siteUrl: "https://crypto-lottery-ffap.netlify.app/",
