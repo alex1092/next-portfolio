@@ -3,13 +3,15 @@ import Link from "next/link";
 import { ModeToggle } from "./ModeToggle";
 
 import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
+import { Menu } from "lucide-react";
 
 export const NavBar = () => {
   return (
-    <div>
-      <div className="flex p-6 lg:hidden">
+    <>
+
+      <div className="flex p-6 absolute top-0 left-0 w-full h-20 lg:hidden">
         <Drawer>
-          <DrawerTrigger>Menu</DrawerTrigger>
+          <DrawerTrigger><Menu className="text-foreground"/></DrawerTrigger>
           <DrawerContent className="flex flex-col gap-10 mx-auto align-middle justify-center">
             <Link className=" text-center" href="/">
               Home
@@ -17,18 +19,18 @@ export const NavBar = () => {
             <Link className=" text-center" href="/projects">
               Projects
             </Link>
-            <Link className=" text-center" href="/token-swap">
-              Web3
-            </Link>
-            {/* <Link className=" text-center" href="/contact">
+
+         
+            <Link className=" text-center" href="/contact">
               Contact
-            </Link> */}
+            </Link>
             <div className="flex justify-center mb-10">
               <ModeToggle />
             </div>
           </DrawerContent>
         </Drawer>
-      </div>
+        </div>
+
 
       <nav className=" container hidden lg:flex justify-center items-center lg:gap-32 p-8">
         <Link
@@ -57,6 +59,6 @@ export const NavBar = () => {
         </Link> */}
         <ModeToggle />
       </nav>
-    </div>
+    </>
   );
 };

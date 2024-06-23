@@ -4,6 +4,7 @@ import { Miriam_Libre } from "next/font/google";
 import "@/styles/globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
+import { NavBar } from "@/components/NavBar";
 
 export const metadata: Metadata = {
   title: "Alex Little",
@@ -29,6 +30,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+
+          <NavBar />
+
           {children}
         </ThemeProvider>
       </body>

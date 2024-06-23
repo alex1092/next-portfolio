@@ -6,12 +6,8 @@ const { portfolio } = config;
 
 export default function Projects() {
   return (
-    <div className="flex">
-      <div className="absolute top-0 left-0 w-full h-20 ">
-        <NavBar />
-      </div>
 
-      <div className="mt-32 justify-center flex gap-8 md:gap-4 row flex-wrap flex-row">
+      <div className=" p-4 mt-20 lg:mt-0 mb-20 lg:p-0 justify-center flex gap-8 md:gap-4 row flex-wrap flex-row">
         {portfolio.projects.map((project) => (
           <PortfolioCard
             key={project.title}
@@ -23,6 +19,6 @@ export default function Projects() {
           />
         ))}
       </div>
-    </div>
+
   );
 }
