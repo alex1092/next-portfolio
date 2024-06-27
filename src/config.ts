@@ -7,6 +7,7 @@ import nextJsPortfolioImage from "@/assets/images/next-portfolio.png";
 import cryptoLotteryImage from "@/assets/images/Create-Wagmi.png";
 import favCryptoTrackerImage from "@/assets/images/fav-crypto-tracker-ss.png"
 import { StaticImageData } from "next/image";
+import shellScreenshot from "@/assets/images/shell-screenshot.png"
 
 interface SocialLinks {
   github: string;
@@ -16,7 +17,7 @@ interface SocialLinks {
 
 interface PortfolioProject {
   title: string;
-  siteUrl: string;
+  siteUrl?: string;
   description: string;
   longDescription: string;
   image: string | StaticImageData;
@@ -81,6 +82,15 @@ export const config: Config = {
         image: nextJsPortfolioImage,
         github: "https://github.com/alex1092/vue-portfolio",
         alt: "My Vue Portfolio",
+      },
+      {
+        title: "$My Shell go",
+        description: 'I built my own shell from scratch using golang',
+        longDescription: 'I built my own shell from scratch using golang, it is a very basic shell that allows you to run built in commands',
+
+        image: shellScreenshot,
+        alt: "My Shell go",
+        github: "https://github.com/alex1092/my-shell-go",
       },
       {
         title: "My Vue Portfolio",
