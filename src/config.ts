@@ -7,6 +7,7 @@ import nextJsPortfolioImage from "@/assets/images/next-portfolio.png";
 import cryptoLotteryImage from "@/assets/images/Create-Wagmi.png";
 import favCryptoTrackerImage from "@/assets/images/fav-crypto-tracker-ss.png"
 import { StaticImageData } from "next/image";
+import tabnzScreenshot from "@/assets/images/tabnz.png"
 import shellScreenshot from "@/assets/images/shell-screenshot.png"
 
 interface SocialLinks {
@@ -128,8 +129,7 @@ export const config: Config = {
         description: "Native Core Develoer",
         longDescription:
           "I lead the merger of Tab New Zealand into our codebase and managed to create a white label betting solution for my company",
-        image:
-          "https://images.unsplash.com/photo-1591462906397-6d3b692f92a5?q=80&w=862&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        image: tabnzScreenshot,
         alt: "Tab New Zealand",
       },
       {
